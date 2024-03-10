@@ -342,16 +342,16 @@ section {
 
 .navbar .dropdown .dropdown ul {
   top: 0;
-  right: calc(100% - 14px); /* Adjusted to ensure it's positioned to the left */
+  right: 0; /* Aligning the right side with the left side of the parent dropdown */
   visibility: hidden;
-  background: #fff; /* Added to remove translucency */
-  box-shadow: none; /* Added to remove box shadow */
+  background: #fff;
+  box-shadow: none;
 }
 
 .navbar .dropdown .dropdown:hover>ul {
   opacity: 1;
   top: 0;
-  right: 100%;
+  right: 100%; /* Positioning the deep dropdown menu */
   visibility: visible;
 }
 
