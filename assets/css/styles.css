@@ -342,15 +342,16 @@ section {
 
 .navbar .dropdown .dropdown ul {
   top: 0;
-  right: calc(100% + 14px); /* Change from 'left' to 'right' */
+  right: calc(100% - 14px); /* Adjusted to ensure it's positioned to the left */
   visibility: hidden;
+  background: #fff; /* Added to remove translucency */
+  box-shadow: none; /* Added to remove box shadow */
 }
-
 
 .navbar .dropdown .dropdown:hover>ul {
   opacity: 1;
   top: 0;
-  right: 100%; /* Change from 'left' to 'right' */
+  right: 100%;
   visibility: visible;
 }
 
