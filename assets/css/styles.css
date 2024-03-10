@@ -340,19 +340,18 @@ section {
     visibility: visible;
   }
 
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  right: 0; /* Aligning the right side with the left side of the parent dropdown */
-  visibility: hidden;
-  background: #fff;
-  box-shadow: none;
-}
+  .navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+  }
 
-.navbar .dropdown .dropdown:hover>ul {
-  opacity: 1;
-  top: 0;
-  right: 100%; /* Positioning the deep dropdown menu */
-  visibility: visible;
+  .navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
